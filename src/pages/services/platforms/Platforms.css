@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.platform_section {
+    background-color: black;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.platform_content_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.platform_head_tittle {
+    width: 95%;
+    font-size: clamp(24px, 5vw, 48px);
+    font-weight: 550;
+    line-height: 1.3;
+    padding: 10px;
+    color: #fff;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.platform_content {
+    width: 80%;
+    font-size: 21px;
+    padding: 20px;
+    color: #ffff;
+}
+
+.platform_section {
+    background: black;
+    overflow: hidden;
+}
+
+/* ========================= */
+/* SCROLL */
+/* ========================= */
+
+.psl-track {
+    display: flex;
+    width: max-content;
+    gap: 30px;
+}
+
+.platform_btn_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.platform_btn_section1 {
+    animation: scrollLeft 20s linear infinite;
+}
+
+.platform_btn_section2 {
+    animation: scrollRight 20s linear infinite;
+}
+
+.platform_btn_section1,
+.platform_btn_section2 {
+    display: flex;
+    gap: 20px;
+    margin: 10px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ========================= */
+/* BUTTON BOX */
+/* ========================= */
+
+.platform_btn_box {
+    position: relative;
+    width: 140px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    isolation: isolate;
+    text-align: center;
+}
+
+/* ========================= */
+/* 🔥 OLD GREEN ANIMATION (ROTATING GLOW) */
+/* ========================= */
+
+.platform_btn_box::before {
+    content: "";
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    /* border-radius: 10%; */
+    background: conic-gradient(transparent,
+            #affe04,
+            transparent 25%);
+
+    transform: translate(-50%, -50%);
+    animation: glow 4s linear infinite;
+
+    filter: blur(14px);
+    z-index: 0;
+    opacity: 0.9;
+}
+
+/* ========================= */
+/* DARK BUTTON BACKGROUND */
+/* ========================= */
+
+.platform_btn_box::after {
+    content: "";
+    position: absolute;
+    inset: 2px;
+
+    background: #2f2f2f;
+    border-radius: 10px;
+
+    z-index: 1;
+}
+
+/* ========================= */
+/* BUTTON TEXT (FIXED - ALWAYS VISIBLE) */
+/* ========================= */
+
+.platform_btn {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #ffffff !important;
+    font-weight: 450;
+    font-size: 14px;
+    background: transparent;
+    /* IMPORTANT */
+    border: none;
+
+    cursor: pointer;
+}
+
+/* ========================= */
+/* REMOVE ANY TEXT BLOCKING */
+/* ========================= */
+
+.platform_btn::before,
+.platform_btn::after {
+    display: none !important;
+}
+
+/* ========================= */
+/* ANIMATIONS */
+/* ========================= */
+
+@keyframes glow {
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+/* ========================= */
+/* HOVER PAUSE */
+/* ========================= */
+
+.platform_btn_section1:hover,
+.platform_btn_section2:hover {
+    animation-play-state: paused;
+}
+
+@media (max-width:800px) {
+
+    @keyframes scrollLeft {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+
+    @keyframes scrollRight {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(50%);
+        }
+    }
+
+}
+
+@media (max-width:600px) {
+    .platform_head_tittle {
+        font-size: 27px;
+    }
+
+    .platform_content {
+        font-size: 15px;
+        width: 100%;
+        text-align: justify;
+    }
+}

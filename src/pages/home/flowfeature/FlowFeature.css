@@ -1,0 +1,264 @@
+.flow-section{
+    height:500px;
+    position:relative;
+    overflow:hidden;
+    background:#060010;
+}
+
+/* center box */
+.flow-box{
+
+    position:absolute;
+    top:80%;
+    left:50%;
+    transform:translate(-50%,-50%);
+
+    width:85%;
+    padding:40px;
+
+    border-radius:20px;
+    /* border:2px solid #AFFE04; */
+
+    background:#060010;
+    z-index:5;
+}
+
+/* card container */
+
+.home-flow_card{
+
+    display:flex;
+    justify-content:center;
+    align-items:stretch;
+    flex-wrap:wrap;
+}
+
+/* common card style */
+
+.home-flow_card-1,
+.home-flow_card-2,
+.home-flow_card-3{
+
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    width: 30%;
+    /* width:350px; */
+    min-height:220px;
+
+    padding:25px;
+    border: 2px solid rgba(175, 254, 4, 0.3);
+    /* border:2px solid #AFFE04; */
+    border-left-style: inset !important;
+    border-right-style: inset !important;
+    /* border-bottom-right-radius: none; */ 
+}
+
+.home-flow_card i{
+    font-size:40px;
+}
+
+
+/* left card */
+
+.home-flow_card-1{
+    border-top-left-radius:25px;
+
+    border-bottom-left-radius:25px;
+    background:black;
+    color:white;
+    
+}
+
+/* middle card */
+
+.home-flow_card-2{
+    background:#AFFE04;
+    color:black;
+}
+
+/* right card */
+
+.home-flow_card-3{
+    border-top-right-radius:25px;
+    border-bottom-right-radius:25px;
+    background:black;
+    color:white;
+}
+
+.home-flowfeature{
+    height: 800px;
+    position: relative;
+    overflow: hidden;
+    background: #000202;
+}
+.home-flow{
+    position: absolute;
+    top: 72%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 86%;
+    height: 45%;
+    background-color:rgb(0, 0, 0);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+.flowFeature_head{
+    font-size: 18px;
+    font-weight: 700;
+}
+/* ---------- Responsive ---------- */
+
+@media (max-width:1024px){
+
+.home-flow_card{
+    flex-direction:column;
+    align-items:center;
+}
+
+.home-flow_card-1,
+.home-flow_card-2,
+.home-flow_card-3{
+
+    width:100%;
+    max-width:500px;
+}
+
+.home-flow_card-1{
+border-radius:20px 20px 0 0;
+}
+
+.home-flow_card-2{
+border-radius:0;
+}
+
+.home-flow_card-3{
+border-radius:0 0 20px 20px;
+}
+
+.flow-box{
+    width:90%;
+}
+
+}
+@media (min-width:991px) and (max-width:1200px){
+    .home-flowfeature{
+        height: 150vh;
+    }
+    .home-flow{
+        top: 57.5%;
+    }
+}
+@media (min-width:768px) and (max-width:991px) {
+    .home-flow{
+        top: 52% ;
+        left: 49% ;
+    }
+    .home-flowfeature{
+        height: 150vh ;
+    }
+}
+
+@media (min-width:475px) and (max-width:768px){
+    .home-flow{
+        top: 63.5% ;
+        left: 49%;
+        height: 67%;
+    }
+    .home-flowfeature{
+        height: 150vh ;
+    }
+}
+@media (max-width:600px){
+
+.flow-section{
+    height:auto;
+    padding:80px 0;
+}
+
+.flow-box{
+    padding:20px;
+}
+
+.home-flow_card i{
+    font-size:32px;
+}
+/* .home-flow{
+        top: 52% !important;
+        left: 49% !important;
+    }
+    .home-flowfeature{
+        height: 130vh ;
+    } */
+}
+
+@media (max-width:475px){
+    .home-flow{
+        top: 52%;
+    }
+    .home-flow_card h5{
+        font-size: 16px;
+    }
+    .home-flow_card p{
+        font-size: 14px;
+    }
+    .home-flowfeature{
+        /* height: 138vh; */
+        height: 175vh;
+    }
+}
+/* .home-flow_card{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    
+}
+.home-flow_card i{
+    
+    font-size: 40px;
+}
+.home-flow_card-1{
+    display: flex;
+    padding: 20px;
+    gap: 10px;
+    flex-direction: column;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    background-color: black;
+    color: white;
+    height: 250px;
+    width: 400px;
+    padding: 20px;
+    border: 2px solid #AFFE04;
+
+}
+.home-flow_card-2{
+    display: flex;
+    padding: 20px;
+    gap: 10px;
+    flex-direction: column;
+    background-color: #AFFE04;
+    color: black;
+    height: 250px;
+    width: 400px;
+    padding: 20px;
+    border: 2px solid #AFFE04;
+}
+.home-flow_card-3{
+    display: flex;
+    padding: 20px;
+    gap: 10px;
+    flex-direction: column;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color:  black;
+    color: white;
+    height: 250px;
+    width: 400px;
+    padding: 20px;
+    border: 2px solid #AFFE04;
+} */

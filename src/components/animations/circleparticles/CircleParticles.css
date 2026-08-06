@@ -1,0 +1,409 @@
+
+ .particles-circle {
+  position: relative;
+  min-height: 100vh;
+  height: auto;
+  overflow: visible;
+  margin-bottom: 10vh;
+  overflow: hidden;
+
+}
+.circle-container{
+    overflow: hidden;
+}   
+.circle{
+    padding-top: 100px;
+    height: 250px;
+    width: 300px;   
+    border-radius: 50%;
+    border: 2px dashed white;
+}
+.half-circle{
+    height: auto;
+    width: 100%;
+}
+path{
+    border: 2px dashed white;
+}
+.particle {
+  position: relative;
+  height: 40vh;
+}
+
+
+
+
+.Particle-gif{
+    height: 80px;
+    width: 80px;
+}
+.circle-container,
+.particle-des {
+    position: relative;
+    z-index: 2;
+}
+.particle-des{
+    position: relative;
+    transform: translate(23%, -280px);
+}
+.content-section{
+    color: #affe04;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    opacity: 0;
+    /* transform: translateY(50px); */
+    transform: translate(-10%, 10%) !important;
+    width: 70%;
+    /* background-color: red; */
+}
+.content-section h5{
+    color: white;
+    font-size: 26px;
+}
+.content-section p{
+    font-size: 24px;
+    text-align: left;
+    color: #affe04;
+}
+.particles-bg{
+    position: absolute;
+    height: 100vh;
+}
+.particle-content {
+  position: absolute;
+  will-change: transform, opacity;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  text-align: center;
+  padding: 20px;
+  top: 0;
+  left: -10;
+}
+
+.particle-content-box {
+  position: relative;
+  left: -460px;
+  z-index: 2;
+  text-align: center;
+  background-color: white;
+  border-radius: 50%;
+  padding: 10px;
+  height: 170px;
+  width: 170px;
+  padding: 22px 12px;
+}
+.Particle-spherescoll{  
+    height: 60vh;
+    width: 60vw;
+}
+
+
+.particle-sphere{
+        width: 60% !important;
+        height: 60% !important;
+        position: absolute;
+        top: 20% !important;
+        left: 20% !important;
+        z-index: 0;
+        pointer-events: none;
+}
+.item-particles {
+}
+.particle-content-box h4{
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+.particle-content:nth-child(6) .particle-content-box {
+    padding: 20px 12px;
+}
+
+
+@media (min-width:1600px) and (max-width:2560px){
+    
+    .content-section h5{
+        font-size: 46px;
+    }
+    .content-section p{
+        font-size: 30px;
+    }
+    .Particle-spherescoll {
+        height: 45vh;
+        width: 45vw;
+    }
+    .particle-content-box {
+        height: 250px;
+        width: 250px;
+    }
+    .particle-content-box h4{
+        font-size: 2.3rem;
+    }
+    .Particle-gif {
+        height: 100px;
+        width: 100px;
+    }
+     .particle-content-box {
+        left: -23%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+   
+    .particle-content-box h4 {
+        font-size: 1.7rem;
+        margin-top: 30px;
+    }
+    .content-section{
+        /* transform: translateY(-129px) !important; */
+        /* transform: translate(-200px, -233px) !important; */
+        transform: translate(-153px, -112px) !important;
+    }
+}
+@media(min-width:1200px) and (max-width:1500px){
+    .Particle-spherescoll {
+        height: 80vh;
+        width: 80vw;
+    }
+     .particle-sphere{
+        width: 80% !important;
+        height: 80% !important;
+        position: absolute;
+        top: 10% !important;
+        left: 10% !important;
+    }
+    .content-section{
+        transform: translate(-10%, 10%) !important;
+        width: 70%;
+    }
+    .particle-content-box {
+        left: -41%;
+        padding: 35px 12px;
+    }
+    .particle-content-box h4{
+        font-size: 1.1rem;
+    }
+    .content-section p{
+        text-align: center;
+    }
+}
+@media (min-width:991px) and (max-width:1200.99px){
+    .particle-content-box {
+        left: -31%;
+        padding: 35px 12px;
+    }
+    .content-section{
+        transform: translate(-20%, 113%) !important;
+        width: 88%;
+    }
+     .particle-sphere{
+        width: 60% !important;
+        height: 60% !important;
+        position: absolute;
+        top: 20% !important;
+        left: 20% !important;
+    }
+     .particle-content-box h4{
+        font-size: 1.1rem;
+    }
+}
+
+@media(min-width:768px) and (max-width:990.999px){
+    .content-section{
+        transform: translate(-17%, 100%) !important;
+        width: 85%;
+    }
+    .content-section p{
+        font-size: 20px;
+    }
+    .particle-content-box{
+        left: -31%;
+        height: 150px;
+        width: 150px;
+        padding: 30px 12px;
+    }
+    .particle-content-box h4{
+        font-size: 16px;
+    }
+    .particle-sphere{
+        width: 50% !important;
+        height: 50% !important;
+        position: absolute;
+        top: 25% !important;
+        left: 25% !important;
+    }
+    .particle-content:nth-child(6) .particle-content-box {
+        padding: 30px 12px;
+    }
+    
+    
+}
+
+@media(min-width:575px) and (max-width:767.99px){
+    .content-section {
+        transform: translate(-17%, 200%) !important;
+        width: 90%;
+    }
+    .content-section p{
+        font-size: 14px;
+    }   
+    .particle-content-box {
+        left: -31%;
+        height: 127px;
+        width: 127px;
+    }  
+    .particle-content-box h4{
+        font-size: 15px;
+    }
+    .particle-content {
+    top: 10%;
+    left: 0;
+}
+
+    .particle-sphere {
+        width: 100% !important;
+        height: 100% !important;
+        position: absolute;
+        top: 0% !important;
+        left: 5% !important;
+        z-index: 0;
+        pointer-events: none;
+}
+
+  .Particle-gif{
+    width: 50px;
+    height: 50px;
+  }
+  .Particle-spherescoll {
+    height: 70vh;
+    width: 70vw;
+  }
+
+      
+}
+
+@media(min-width:375px) and (max-width:575.99px){
+    .particle-content-box h4{
+        display: none;
+    }
+    .Particle-spherescoll {
+    height: 40vh;
+    width: 40vw;
+}
+    .particle-sphere {
+        width: 100% !important;
+        height: 100% !important;
+        position: absolute;
+        top: 0% !important;
+        left: -8% !important;
+        z-index: 0;
+        pointer-events: none;
+}
+     .content-section{
+        /* transform: translate(-23%, 252%) !important; */
+        transform: translate(-20%, 225%) !important;
+        width: 95%;
+    }
+    .content-section p{
+        font-size: 14px;
+    }
+    .content-section h5 {
+        font-size: 22px;
+    }
+    .particle-content-box {
+        height: 140px;
+        padding: 31px;
+        width: 140px;
+        left: -32%;
+    }  
+    .particle-content {
+    top: 10%;
+    left: 0;
+}
+
+  .Particle-gif{
+    width: 80px;
+    height: 90px;
+  } 
+
+}
+@media (max-width:374.99px){
+    .particle-content-box h4{
+        display: none;
+    }
+    .Particle-spherescoll{
+    width: 45vw !important;
+    height: 100vw !important;
+    max-width: 420px;
+    max-height: 420px;
+  }
+    .content-section{
+        /* transform: translate(-23%, 210%) !important; */
+        transform: translate(-19%, 241%) !important
+    }
+    .content-section p{
+        font-size: 14px;
+    }
+    .content-section h5 {
+        font-size: 24px;
+    }
+     .particles-circle {
+        min-height: 100vh;
+        height: auto;
+    }
+
+  .particle-content-box{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 130px;
+        height: 130px;
+        padding: 0px 45px;
+        display: flex;
+        
+        transform: translateX(-20%);
+        position: relative;
+                left: -17%;
+  }
+  .particle-content-box h4:nth-child(4){
+    padding-top: 10px;
+    /* background-color: red; */
+  }
+  .particle-sphere{
+    width: 100% !important;
+    height: 100% !important;
+    position: absolute;
+    top: 0% !important;
+    left: 0% !important;
+    z-index: 0;
+    pointer-events: none;
+  }
+
+
+  .Particle-gif{
+    width: 100px;
+    height: 100px;
+  }
+ 
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

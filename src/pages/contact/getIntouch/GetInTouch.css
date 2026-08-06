@@ -1,0 +1,311 @@
+/* *GetInTouch.css* */
+.getInTouch_container {
+    position: relative;
+    /* margin-top: 100px; */
+    text-align: center;
+    width: 100%;
+    margin-bottom: 200px!important;
+    /* background-color: black; */
+    
+}
+
+.getInTouch_h1 {
+    color: white;
+    font-size: 55px;
+    font-weight: 600;
+}
+
+.getInTouch_h1 span {
+    color: #AFFE04;
+}
+
+.getInTouch_overallDiv {
+    display: flex;
+    position: relative;
+}
+
+.getInTouch_leftDiv {
+    position: relative;
+    top: 70px;
+    width: 33.3%;
+    transform: translate(500px,100px);
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 50px;
+}
+
+.getIntouch_leftInput1 {
+    background-color: #ffffff;
+    width: 320px;
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    mask-image: linear-gradient(to left, transparent, black 100%);
+}
+
+.getIntouch_leftInputImg {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    border-radius: 10px;
+    color: #AFFE04;
+    border: 1px solid #AFFE04;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.getInTouch_email {
+    transform: rotate(3deg);
+}
+
+.getInTouch_phone {
+    transform: rotate(-2deg);
+}
+
+.getInTouch_location {
+    transform: rotate(5deg);
+
+}
+
+.getInTouch_hours {
+    transform: rotate(-2deg);
+}
+
+.getInTouch_facebook {
+    transform: rotate(3deg);
+}
+
+.getInTouch_instagram {
+    transform: rotate(-4deg);
+}
+
+.getInTouch_instagram img{
+    height: 50px;
+    width: 50px;
+    padding: 0px;
+}
+
+.getInTouch_x {
+    transform: rotate(4deg);
+
+}
+
+.getInTouch_youtube {
+    transform: rotate(-2deg);
+}
+
+.getIntouch_leftInputDiv {
+    text-align: left;
+}
+.getIntouch_rightInputDiv{
+    text-align: right;
+}
+
+.getIntouch_leftInputDiv p {
+    font-weight: bold!important;
+    font-size: 20px!important;
+    margin-bottom: 0!important;
+    color: #000!important;
+}
+
+.getIntouch_leftInputDiv>p+p {
+    color: gray!important;
+    font-weight: normal!important;
+}
+
+.getInTouch_centerDiv {
+    height: 700px;
+    width: 33.3%;
+    margin: auto;
+
+}
+
+.GetInTouch_glowImg {
+    height: 600px;
+    width: 470px;
+    position: absolute;
+    filter: blur(58px);
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+}
+
+.GetInTouch_phoneImg {
+    height: 750px;
+    width: 400px;
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 6;
+}
+
+.getIntouch_form {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    width: 340px;
+    transform: translate(-50%, -50%);
+    z-index: 7;
+    padding: 20px;
+    color: white;
+    text-align: left;
+    
+}
+.getInTouch_inputRow{
+    position: relative;
+    margin-bottom: 10px!important;
+}
+.getInTouch_errormsg{
+    position: absolute;
+    font-size: 12px; 
+}
+.getIntouch_form button {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+}
+
+.getIntouch_form h1 {
+    font-size: 32px;
+}
+
+.getIntouch_form p {
+    font-size: 16px;
+}
+
+.getIntouch_formInput {
+    border: 1px solid #8c8c8c;
+    color: white!important;
+    background-color: #090c05;
+    padding: 10px;
+    border-radius: 10px;
+}
+.getIntouch_formInput::placeholder {
+  color: #8c8c8c;
+}
+
+.getIntouch_formInput:focus {
+    border-color: #AFFE04!important;
+    outline: none;
+    box-shadow: none;
+    background-color: #090c05;
+}
+
+.getInTouchButton {
+    background-color: white;
+    border: none;
+}
+
+.getInTouch_rightDiv {
+    position: relative;
+    top: 70px;
+    width: 33.3%;
+    transform: translate(-200px, 100px);
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.getIntouch_rightInput {
+    justify-content: end;
+    mask-image: linear-gradient(to right, transparent, black 100%);
+}
+
+.getInTouch_fb_color {
+    color: #1877F2;
+}
+
+.getInTouch_twitter {
+    color: #000;
+    padding: 7px;
+}
+
+.getInTouch_youTube {
+    color: #FF0000;
+}
+
+@media screen and (min-width:300px) and (max-width:420px) {
+    .getInTouch_container h1 {
+        font-size: 45px;
+    }
+
+    .getIntouch_form h1 {
+        font-size: 23px;
+    }
+
+    .getIntouch_form p {
+        font-size: 15px;
+    }
+
+    .getInTouch_leftDiv {
+        display: none;
+    }
+
+    .GetInTouch_glowImg {
+        width: 100%;
+    }
+
+    .GetInTouch_phoneImg {
+        width: 320px;
+        height:720px;
+    }
+
+    .getInTouch_centerDiv {
+        width: 100%;
+    }
+
+    .getInTouch_rightDiv {
+        display: none;
+    }
+
+    .getIntouch_form {
+        width: 280px;
+        top: 65%;
+    }
+}
+
+@media screen and (min-width:420px) and (max-width:573px) {
+     .getInTouch_container h1 {
+        font-size: 60px;
+    }
+    .getIntouch_form h1 {
+        font-size: 25px;
+    }
+
+    .getInTouch_centerDiv {
+        width: 75%;
+    }
+
+    .GetInTouch_glowImg {
+        width: 75%;
+    }
+
+    .GetInTouch_phoneImg {
+        width: 370px;
+    }
+
+    .getIntouch_form {
+        width:320px;
+        
+    }
+
+    .getInTouch_leftDiv {
+        display: none;
+    }
+
+    .getInTouch_rightDiv {
+        display: none;
+    }
+}
+
+@media screen and (min-width:573px) and (max-width:767.98px) {
+    .getIntouch_form h1{
+        font-size: 25px;
+    }
+      
+}

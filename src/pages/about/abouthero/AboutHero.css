@@ -1,0 +1,286 @@
+*AboutHero.css*
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/************* Overall First Section */
+
+.digital_section_1 {
+  /* height: 100vh; */
+  background-color: black;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-align: center;
+  /* padding-top: 300px; */
+  position: relative;
+}
+.digital_hero span{
+  color: #AFFE04;
+}
+
+/******************* Content Box */
+
+.section_1_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 40px;
+  /* padding: 40px; */
+}
+
+/*.************************ Hero Content Name */
+
+.digital_hero {
+  color: white;
+  font-size: 56px;
+  /* min-height: 140px; */
+  text-align: center;
+  /* padding: 10px; */
+  font-weight: 600;
+  padding-top: 170px;
+}
+
+.digital_name {
+  color: #AFFE04;
+}
+
+/********************** Course Content */
+
+.aboutHero_digital_content {
+  color: white;
+  font-size: 21px;
+  font-weight: 400;
+  width: 65%;
+  min-height: 126;
+  padding: 20px;
+  margin-bottom: 0px!important;
+}
+
+
+.shades {
+  position: absolute;
+  /* height: 500px; */
+  width: 890px;
+}
+
+.left_shade {
+  position: absolute;
+  /* IMPORTANT */
+  top: -200px;
+  left: 0;
+  animation-name: shade;
+  animation-duration: 1s;
+  /* 's' miss aagiduchu */
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  transition: all 1s;
+}
+
+@keyframes shade {
+  from {
+    top: -300px;
+    left: -300px;
+  }
+
+  to {
+    top: 0;
+    left: 0;
+  }
+}
+
+.right_shade {
+  position: absolute;
+  /* IMPORTANT */
+  top: -200px;
+  right: 0;
+  animation-name: shade-1;
+  animation-duration: 1s;
+  /* 's' miss aagiduchu */
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  transition: all 1s;
+}
+
+@keyframes shade-1 {
+  from {
+    top: -300px;
+    right: -300px;
+  }
+
+  to {
+    top: 0;
+    right: 0;
+  }
+}
+
+
+/* buttons */
+.aboutHero-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  .aboutHero-buttons button{
+    font-weight: 600;
+  }
+  .about-hero-btn-1{
+    position: relative;
+    color: #000;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+    background-color: #AFFE04;
+    width: 250px;
+    height: fit-content;
+    border-radius: 25px;
+    border: none;
+    font-size: 18px;
+    padding: 10px;
+}
+.about-hero-btn-1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 25px;
+  transition: width 0.4s ease;
+  z-index: -1;
+}
+
+/* hover animation */
+.about-hero-btn-1:hover::before {
+  width: 100%;
+}
+.about-hero-btn-2{
+    background: transparent;
+    background-color: blur;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    background-color: rgba(120, 120, 120, 0.16);
+    width: 200px;
+    height: fit-content;
+    border-radius: 25px;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+}
+.about-hero-btn-2:hover{
+    color: #AFFE04;
+    background: transparent;
+    background-color: blur;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    background-color: #AFFE0429;
+}
+
+/* 1200px */
+@media (max-width:1200px) {
+  .section_1_content {
+    padding: 0px 35px;
+  }
+
+  .digital_hero {
+    font-size: 60px;
+  }
+
+  .aboutHero_digital_content {
+    width: 90%;
+    padding: 20px;
+    font-size: 21px;
+  }
+
+  .shades {
+    width: 500px;
+  }
+}
+
+
+/* 900px */
+@media (max-width:900px) {
+  .section_1_content {
+    padding: 0px 25px;
+  }
+
+  .digital_hero {
+    font-size: 50px;
+  }
+
+  .aboutHero_digital_content {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .shades {
+    width: 300px;
+  }
+}
+
+
+/* 600px */
+@media (max-width:630px) {
+  .section_1_content {
+    padding: 0px 20px;
+  }
+
+  .digital_hero {
+    font-size: 45px;
+    width: 100%;
+  }
+
+  .aboutHero_digital_content {
+    padding: 20px;
+  }
+
+  .section_1_btn {
+    padding: 20px;
+  }
+}
+
+
+/* 400px */
+@media (max-width:400px) {
+  .section_1_content {
+    padding: 0px 15px;
+  }
+
+  .digital_hero {
+    padding-top: 80px;
+    font-size: 30px;
+    width: 100%;
+    /* text-align: justify; */
+  }
+
+  .aboutHero_digital_content {
+    font-size: 15px;
+    padding: 10px;
+    text-align: justify;
+  }
+
+  .section_1_btn1 {
+    font-size: 17px;
+  }
+
+  .section_1_btn2 {
+    font-size: 15px;
+    padding: 1rem 1.7rem;
+    letter-spacing: 1px;
+    width: 270px;
+  }
+
+  .section_1_btn {
+    padding-top: 0;
+  }
+
+
+  .aboutHero-buttons{
+    flex-direction: column;
+   }
+}

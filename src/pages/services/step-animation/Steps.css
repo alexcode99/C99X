@@ -1,0 +1,275 @@
+body {
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+/* WRAPPER */
+.staircaseAnimation_wrapper {
+  position: relative;
+  height: 280vh;
+  width: 100%;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  background-color: #000;
+}
+
+/* STICKY CONTAINER */
+.staircaseAnimation_container {
+  position: sticky;
+  top: 0;
+  left: 15%;
+  width: 70%;
+  height: 100vh;
+}
+
+/* 🔥 LEFT SIDE CENTER LOCK */
+.staircaseAnimation_topContent {
+  position: sticky;
+  top: 30%;
+  left: 5%;
+  transform: translateY(-50%);
+  width: 350px;
+  height: 220px;
+}
+
+/* 🔥 RIGHT SIDE CENTER LOCK */
+.staircaseAnimation_bottomContent {
+  position: fixed;
+  top: 80%;
+  right: 5%;
+  transform: translateY(-50%);
+  width: 350px;
+  height: 220px;
+}
+
+/* TEST DIVS */
+.topdivtest {
+  height: 100vh;
+  background-color: rgb(0, 30, 0);
+}
+
+.bottomdivtest {
+  height: 100vh;
+  background-color: rgb(32, 32, 1);
+}
+
+/* 🔥 CONTENT STACK (ABSOLUTE OVERLAY) */
+.staircaseAnimation_content {
+  position: absolute;
+  inset: 0;
+  /* FULL overlap */
+  width: 100%;
+  padding: 20px !important;
+  text-align: justify;
+  box-shadow: inset 0 10px 20px rgba(255, 255, 255, 0.3);
+  border-radius: 30px;
+  color: white;
+
+  display: none;
+  /* GSAP will show */
+  opacity: 0;
+}
+
+.staircaseAnimation_content h2 {
+  color: #AFFE04;
+  font-size: 30px;
+  padding-bottom: 5px !important;
+}
+
+.staircaseAnimation_content p {
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+/* STEPS */
+.staircaseAnimation_step {
+  position: absolute;
+  width: clamp(80px, 9vw, 160px);
+  height: clamp(35px, 4vw, 80px);
+  background: linear-gradient(to right,
+      #1a1a1a 0%,
+      #555 40%,
+      #aaa 70%,
+      #e6e6e6 100%);
+}
+
+/* STEP TEXT */
+.staircaseAnimation_stepText {
+  width: 150px;
+  position: absolute;
+  left: 110%;
+  top: 40%;
+  color: #AFFE04;
+  z-index: 2;
+}
+
+/* GLOW */
+.staircaseAnimation_stepText::before {
+  content: "";
+  position: absolute;
+  left: -35px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle,
+      rgba(175, 254, 4, 0.6) 0%,
+      rgba(175, 254, 4, 0.3) 0%,
+      rgba(175, 254, 4, 0.1) 70%,
+      transparent 100%);
+  filter: blur(20px);
+  z-index: -1;
+}
+
+/* STAIR POSITION */
+.staircaseAnimation_step:nth-child(1) {
+  bottom: 120px;
+  left: 10vw;
+  opacity: 1;
+}
+
+.staircaseAnimation_step:nth-child(2) {
+  bottom: 165px;
+  left: 16vw;
+  opacity: 1;
+}
+
+.staircaseAnimation_step:nth-child(3) {
+  bottom: 210px;
+  left: 22vw;
+}
+
+.staircaseAnimation_step:nth-child(4) {
+  bottom: 255px;
+  left: 28vw;
+}
+
+.staircaseAnimation_step:nth-child(5) {
+  bottom: 300px;
+  left: 34vw;
+}
+
+.staircaseAnimation_step:nth-child(6) {
+  bottom: 345px;
+  left: 40vw;
+}
+
+.staircaseAnimation_step:nth-child(7) {
+  bottom: 390px;
+  left: 46vw;
+}
+
+.staircaseAnimation_step {
+  height: 45px !important;
+  width: 120px !important;
+}
+
+/* BALL */
+.staircaseAnimation_glowBall {
+  position: absolute;
+  width: clamp(30px, 4vw, 50px);
+  height: clamp(30px, 4vw, 50px);
+  border-radius: 50%;
+  bottom: 168px;
+  left: 9vw;
+  background: linear-gradient(to bottom,
+      #1a1a1a 0%,
+      #555 40%,
+      #aaa 70%,
+      #e6e6e6 100%);
+  box-shadow:
+    0 0 20px rgba(236, 247, 245, 0.6),
+    0 0 40px rgba(236, 245, 243, 0.4),
+    0 0 60px rgba(234, 243, 241, 0.2);
+}
+
+
+@media screen and (max-width: 1100px) {
+
+  .staircaseAnimation_wrapper {
+    height: 320vh;
+  }
+
+}
+
+@media screen and (max-width: 1009px) {
+
+  .staircaseAnimation_bottomContent {
+    top: 85%;
+    right: 2%;
+    transform: translateY(-50%);
+    width: 376px;
+    height: 180px;
+  }
+
+  .staircaseAnimation_topContent {
+    top: 25%;
+    left: 2%;
+    transform: translateY(-50%);
+    width: 376px;
+    height: 190px;
+  }
+
+  .staircaseAnimation_content h2 {
+    /* color: #AFFE04; */
+    font-size: 25px;
+    /* padding-bottom: 5px !important; */
+  }
+
+  .staircaseAnimation_content p {
+    font-size: 15px;
+    /* text-align: justify; */
+  }
+
+  .staircaseAnimation_wrapper {
+    height: 310vh;
+  }
+
+}
+
+
+/* MEDIA QUERIES FOR RESPONSIVENESS */
+@media screen and (max-width: 799px) {
+
+  .staircaseAnimation_topContent,
+  .staircaseAnimation_bottomContent {
+    display: none;
+    /* hide side content on mobile */
+  }
+
+  .staircaseAnimation_container {
+    /* width: 100%; */
+    left: 0%;
+  }
+
+  .staircaseAnimation_content h2 {
+    /* color: #AFFE04; */
+    font-size: 21px;
+    /* padding-bottom: 5px !important; */
+  }
+
+  .staircaseAnimation_content p {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .staircaseAnimation_container {
+    top: 0%;
+    left: -15%;
+  }
+
+  .staircaseAnimation_stepText {
+    width: 60px;
+  }
+
+  .staircaseAnimation_glowBall {
+    left: 17vw;
+  }
+
+  .staircaseAnimation_step {
+    height: 45px;
+    width: 110px;
+  }
+}

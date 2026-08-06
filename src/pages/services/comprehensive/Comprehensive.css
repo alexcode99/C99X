@@ -1,0 +1,434 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/******************* overall Section */
+
+.comp_section {
+    background-color: black;
+    text-align: center;
+    margin-bottom: 30px;
+     position: relative;
+    z-index: 1;
+    background: #000;
+    isolation: isolate;
+}
+
+/********************* content Box */
+
+.comp_content_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.comp_tittle {
+    width: 95%;
+    /* max-width: 900px; */
+
+    font-size: clamp(24px, 5vw, 48px);
+    font-weight: 550;
+    line-height: 1.3;
+    padding: 10px;
+    color: #fff;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.comp_content {
+    width: 80%;
+    /* height: 756px; */
+    /* color: white; */
+    font-size: 21px;
+    padding: 20px;
+}
+
+.comp_content_2 {
+    padding: 20px 20px 30px 20px;
+    width: 70%;
+    color: #FFFF;
+    font-size: 21px;
+}
+
+.gifs {
+    height: 60px;
+    width: 60px;
+    transition: all 0.3s;
+}
+
+.comp_chart {
+    width: 70%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* gap: 20px; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* flex-direction: column; */
+    margin: 0 auto 30px auto;
+    background-color: black;
+}
+
+@media(max-width:768px){
+    .comp_chart{
+        grid-template-columns: 1fr;
+    }
+}
+
+.comp_chart_1,
+.comp_chart_2 {
+    /* height: 900px; */
+    width: 50%;
+}
+
+.comp_chart_content {
+    /* height: 33.331%; */
+    width: 100%;
+    border: 1px solid rgb(39, 39, 39);
+    text-align: left;
+    padding: 30px 30px 0px 30px;
+    color: white;
+    line-height: 2;
+    transition: all 0.5s;
+}
+
+.comp_chart_content h3 {
+    border-left: 7px solid white;
+    padding-left: 20px;
+    margin: 20px;
+    transition: all 0.3s;
+}
+
+.comp_chart_content p {
+    padding: 0px 20px 0px 20px;
+    font-size: 16px;
+}
+
+.comp_chart_content:hover {
+    background-image: linear-gradient(to top, black, rgb(81, 81, 81));
+    /* padding: ; */
+}
+
+.comp_chart_content:hover h3 {
+    padding: 10px 0 10px 30px;
+    border-left: 7px solid #AFFE04;
+    border-radius: 5px;
+}
+
+.comp_chart_content:hover .gifs {
+    scale: 1.1;
+}
+
+/* ================================================
+   MEDIA QUERIES
+   ================================================ */
+
+/* ========== 1400px (Large Desktop) ========== */
+@media (max-width: 1400px) {
+    .comp_section {
+        padding: 130px 100px;
+    }
+
+    .comp_chart {
+        width: 92%;
+    }
+
+    .comp_tittle {
+        font-size: 52px;
+    }
+}
+
+
+/* ========== 1200px (Small Desktop) ========== */
+@media (max-width: 1200px) {
+    .comp_section {
+        padding: 110px 80px 50px;
+    }
+
+    .comp_tittle {
+        font-size: 48px;
+    }
+
+    .comp_content {
+        width: 82%;
+        font-size: 24px;
+    }
+
+    .comp_content_2 {
+        width: 82%;
+        font-size: 21px;
+    }
+
+    .comp_chart {
+        width: 98%;
+    }
+
+    .comp_chart_content {
+        padding: 45px 28px;
+    }
+
+    .comp_chart_content p {
+        font-size: 17px;
+    }
+
+    .comp_chart_content h3 {
+        font-size: 20px;
+    }
+
+    .gifs {
+        height: 55px;
+        width: 55px;
+    }
+}
+
+
+/* ========== 1024px (Tablet Landscape) ========== */
+@media (max-width: 1024px) {
+    .comp_section {
+        padding: 90px 60px;
+    }
+
+    .comp_tittle {
+        font-size: 42px;
+        line-height: 1.7;
+    }
+
+    .comp_content {
+        width: 88%;
+        font-size: 22px;
+    }
+
+    .comp_content_2 {
+        width: 88%;
+        /* font-size: 20px; */
+    }
+
+    .comp_chart {
+        width: 100%;
+    }
+
+    .comp_chart_1,
+    .comp_chart_2 {
+        height: 820px;
+        width: 50%;
+    }
+
+    .comp_chart_content {
+        padding: 38px 24px;
+        line-height: 1.9;
+    }
+
+    .comp_chart_content p {
+        font-size: 16px;
+    }
+
+    .comp_chart_content h3 {
+        font-size: 18px;
+        margin: 15px;
+    }
+
+    .gifs {
+        height: 50px;
+        width: 50px;
+    }
+}
+
+
+/* ========== 768px (Tablet Portrait) ========== */
+@media (max-width: 768px) {
+    .comp_section {
+        padding: 80px 35px;
+    }
+
+    .comp_tittle {
+        font-size: 36px;
+        line-height: 1.6;
+    }
+
+    .comp_content {
+        width: 95%;
+        font-size: 20px;
+        padding: 15px;
+        text-align: justify;
+    }
+
+    .comp_content_2 {
+        width: 95%;
+        font-size: 18px;
+        padding: 15px;
+        text-align: justify;
+    }
+
+    /* ✅ Stack cards vertically */
+    .comp_chart {
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .comp_chart_1,
+    .comp_chart_2 {
+        height: 550px;
+        width: 100%;
+    }
+
+    .comp_chart_content {
+        padding: 35px 25px;
+        line-height: 1.8;
+    }
+
+    .comp_chart_content p {
+        font-size: 16px;
+        padding: 0 15px 15px 15px;
+        text-align: justify;
+    }
+
+    .comp_chart_content h3 {
+        font-size: 18px;
+        margin: 12px 15px;
+        border-left: 6px solid white;
+        padding-left: 15px;
+    }
+
+    .comp_chart_content:hover h3 {
+        border-left: 6px solid #AFFE04;
+        padding-left: 22px;
+    }
+
+    .gifs {
+        height: 46px;
+        width: 46px;
+    }
+}
+
+
+/* ========== 550px (Large Mobile) ========== */
+@media (max-width: 550px) {
+    .comp_section {
+        padding: 60px 22px;
+    }
+
+    .comp_tittle {
+        font-size: 30px;
+        line-height: 1.5;
+    }
+
+    .comp_content {
+        width: 100%;
+        font-size: 17px;
+        padding: 12px 10px;
+        text-align: justify;
+    }
+
+    .comp_content_2 {
+        width: 100%;
+        font-size: 16px;
+        padding: 12px 10px;
+        text-align: justify;
+    }
+
+    .comp_chart {
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .comp_chart_1,
+    .comp_chart_2 {
+        height: 500px;
+        width: 100%;
+    }
+
+    .comp_chart_content {
+        padding: 28px 18px;
+        line-height: 1.7;
+    }
+
+    .comp_chart_content p {
+        font-size: 15px;
+        padding: 0 12px 12px 12px;
+        text-align: justify;
+    }
+
+    .comp_chart_content h3 {
+        font-size: 16px;
+        margin: 10px 12px;
+        border-left: 5px solid white;
+        padding-left: 12px;
+    }
+
+    .comp_chart_content:hover h3 {
+        border-left: 5px solid #AFFE04;
+        padding-left: 18px;
+    }
+
+    .gifs {
+        height: 42px;
+        width: 42px;
+    }
+}
+
+
+/* ========== 400px (Small Mobile) ========== */
+@media (max-width: 400px) {
+    .comp_section {
+        padding: 50px 15px;
+    }
+
+    .comp_tittle {
+        font-size: 26px;
+        line-height: 1.4;
+    }
+
+    .comp_content {
+        font-size: 14.5px;
+        padding: 10px 8px;
+        text-align: justify;
+    }
+
+    .comp_content_2 {
+        font-size: 14px;
+        padding: 10px 8px;
+        text-align: justify;
+    }
+
+    .comp_chart_content {
+        padding: 22px 14px;
+        line-height: 2;
+    }
+
+    .comp_chart_1,
+    .comp_chart_2 {
+        height: 400px;
+        width: 100%;
+    }
+
+    .comp_chart_content p {
+        font-size: 13px;
+        padding: 0 10px 10px 10px;
+    }
+
+    .comp_chart_content h3 {
+        font-size: 14px;
+        margin: 8px 10px;
+        border-left: 4px solid white;
+        padding-left: 10px;
+    }
+
+    .comp_chart_content:hover h3 {
+        border-left: 4px solid #AFFE04;
+        padding-left: 14px;
+    }
+
+    .gifs {
+        height: 35px;
+        width: 35px;
+    }
+}

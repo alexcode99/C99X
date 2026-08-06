@@ -1,0 +1,287 @@
+
+
+/* =========================
+   CAROUSEL SECTION
+========================= */
+
+.home-carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin: 30px 0;
+}
+
+/* LIGHT TOP + BOTTOM */
+.home-ligh-back,
+.home-ligh-back-1 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* TOP LIGHT */
+.home-ligh-back {
+  top: 0;
+}
+
+.home-ligh-back img {
+  width: 1800px;
+  max-width: unset;
+  height: 60px;
+  display: block;
+  position: relative;
+  left: 50%;
+  /* transform: translate(-50%, -180%); */
+  transform: translate(-50%, -17%);
+}
+
+/* BOTTOM LIGHT */
+.home-ligh-back-1 {
+  bottom: 0;
+}
+
+.home-ligh-back-1 img {
+  width: 1800px;
+  max-width: unset;
+  height: 80px;
+  display: block;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 40%);
+}
+
+/* =========================
+   MARQUEE
+========================= */
+/* 
+.hero-marquee-scroll {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+  padding: 40px 0;
+  overflow: hidden;
+  white-space: nowrap;
+} */
+
+/* .marquee-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 25s linear infinite;
+  animation-direction: reverse;
+  will-change: transform;
+} */
+/* 
+.marquee-track {
+  display: flex;
+  width: fit-content;
+  will-change: transform;
+  animation: marqueeRight 20s linear infinite;
+}
+
+.hero-marquee {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  padding-right: 30px;
+}
+
+.marquee-text {
+  color: white;
+  font-size: 50px;
+  font-weight: 500;
+  width: max-content;
+}
+
+.maquee-circle {
+  height: 40px;
+  width: 40px;
+  min-width: 40px;
+  border-radius: 50%;
+  background: white;
+  flex-shrink: 0;
+}
+
+.marquee-text:first-child {
+  margin-left: 20px;
+} */
+
+/* @keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+} */
+
+ /* @keyframes marqueeRight {
+  from {
+    transform: translateX(-50%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+} */
+
+
+.hero-marquee-scroll {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+  padding: 40px 0;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+
+  /* IMPORTANT */
+  animation: marqueeMove 50s linear infinite;
+  animation-direction: reverse;
+  will-change: transform;
+  transform: translate3d(0,0,0);
+}
+
+.hero-marquee {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  flex-shrink: 0;
+
+  /* IMPORTANT */
+  padding-right: 30px;
+}
+.marquee-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+
+.marquee-text {
+  color: white;
+  font-size: 50px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.maquee-circle {
+  height: 40px;
+  width: 40px;
+  min-width: 40px;
+  border-radius: 50%;
+  background: white;
+  flex-shrink: 0;
+}
+
+@keyframes marqueeMove {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-33.333%);
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 475.99px) {
+    
+  .home-ligh-back img {
+    width: 900px;
+    height: 40px;
+    /* transform: translate(-50%, -150%); */
+    transform: translate(-50%, -42%);
+  }
+
+  .home-ligh-back-1 img {
+    width: 900px;
+    height: 50px;
+    transform: translate(-50%, 20%);
+  }
+
+  .hero-marquee-scroll {
+    padding: 25px 0;
+  }
+
+  .marquee-text {
+    font-size: 20px;
+  }
+
+  .maquee-circle {
+    height: 18px;
+    width: 18px;
+    min-width: 18px;
+  }
+
+  .hero-marquee {
+    gap: 16px;
+  }
+
+ 
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (min-width: 476px) and (max-width: 768px) {
+    
+  .home-ligh-back img {
+    width: 1200px;
+    height: 45px;
+    transform: translate(-50%, -17%);
+  }
+
+  .home-ligh-back-1 img {
+    width: 1200px;
+    height: 60px;
+
+  }
+
+  .marquee-text {
+    font-size: 30px;
+  }
+
+  .maquee-circle {
+    height: 24px;
+    width: 24px;
+    min-width: 24px;
+  }
+}
+
+/* =========================
+   SMALL LAPTOP
+========================= */
+
+
+@media (min-width: 769px) and (max-width: 1200px) {
+
+  .home-ligh-back img {
+    transform: translate(-50%, -17%);
+  }
+
+  .home-ligh-back img,
+  .home-ligh-back-1 img {
+    width: 1500px;
+  }
+
+  .marquee-text {
+    font-size: 40px;
+  }
+}

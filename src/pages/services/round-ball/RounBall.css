@@ -1,0 +1,274 @@
+body {
+  margin: 0;
+  background: black;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* PAGE */
+.page {
+  min-height: 100vh;
+  /* padding-bottom: 200vh; */
+  /* scroll space for animations */
+}
+
+/* WRAPPER */
+.wrapper {
+  min-height: 100dvh;
+  /* mobile safe viewport */
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ORBIT ITEM */
+.orbit-item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* RIGHT CONTENT */
+.glow-content2 {
+  position: absolute;
+  top: 53.5%;
+  right: 2%;
+  transform: translateY(-50%);
+  width: 320px;
+}
+
+/* LEFT CONTENT */
+.glow-content1 {
+  position: absolute;
+  top: 54%;
+  left: 2%;
+  transform: translateY(-50%);
+  width: 300px;
+  font-size: 15px;
+}
+
+/* CONTENT BOX */
+.glow-round-content {
+  position: absolute;
+  width: 100%;
+  padding: 15px;
+  border-radius: 18px;
+  box-shadow: inset 0 10px 20px rgba(255, 255, 255, 0.2);
+  opacity: 0;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+/* CENTER DOT */
+.centerDot {
+  height: 42px;
+  width: 42px;
+  background: linear-gradient(to top, grey, white);
+  border: 1px solid white;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 5;
+  box-shadow: 0 0 15px white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* CENTER LINE */
+.center-line1 {
+  height: 2px;
+  width: 90px;
+  background: white;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+  transform-origin: left center;
+}
+
+/* DOT */
+.dot {
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  border: 1px solid white;
+  background: transparent;
+  opacity: 0.5;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px white;
+}
+
+/* TEXT OUTSIDE CIRCLE */
+.text-light-ball {
+  position: absolute;
+  color: #affe04;
+  font-weight: bold;
+  font-size: 15px;
+  white-space: nowrap;
+  text-align: center;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
+
+/* TYPOGRAPHY */
+.light-ball-tittle {
+  color: #a6ff00;
+  margin: 0 0 4px;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+}
+
+.light-ball-content {
+  color: #fff;
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.4;
+}
+
+.summa {
+  height: 100vh;
+  background-color: greenyellow;
+}
+
+.glow-round-content h2 {
+  font-size: 22px;
+}
+
+.glow-round-content p {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+
+/* LARGE SCREENS */
+@media screen and (min-width: 1540px) and (max-width: 1994px) {
+  .glow-content1 {
+    width: 340px;
+  }
+
+  .glow-content2 {
+    width: 340px;
+  }
+}
+
+/* LAPTOP */
+@media(max-width:1100px) {
+  .glow-content1 {
+    top: 62%;
+    left: 1%;
+    width: 270px;
+  }
+
+  .glow-content2 {
+    top: 10%;
+    right: 4%;
+    width: 270px;
+  }
+
+  .text-light-ball {
+    font-size: 13px;
+  }
+}
+
+/* TABLET */
+@media(max-width:930px) {
+  .glow-content1 {
+    top: 77%;
+    left: 2%;
+    width: 320px;
+  }
+
+  .center-line1 {
+    width: 70px;
+  }
+
+  .glow-content2 {
+    top: 10%;
+    right: 1%;
+    width: 320px;
+  }
+
+  .glow-round-content {
+    padding: 10px;
+  }
+
+  .glow-round-content h2 {
+    font-size: 17px;
+  }
+
+  .glow-round-content p {
+    font-size: 15px;
+  }
+
+  .text-light-ball {
+    font-size: 13px;
+  }
+}
+
+/* SMALL TABLET */
+@media(max-width:720px) {
+  .glow-content1 {
+    top: 77%;
+    left: 2%;
+    width: 250px;
+  }
+
+  .glow-content2 {
+    top: 10%;
+    right: 5%;
+    width: 250px;
+  }
+}
+
+/* MOBILE */
+@media(max-width:630px) {
+
+  .glow-content1,
+  .glow-content2 {
+    display: none !important;
+  }
+
+  .centerDot {
+    height: 32px;
+    width: 32px;
+  }
+
+  .dot {
+    height: 28px;
+    width: 28px;
+  }
+
+  .text-light-ball {
+    font-size: 12px;
+  }
+}
+
+/* SMALL MOBILE */
+@media(max-width:450px) {
+  .centerDot {
+    height: 28px;
+    width: 28px;
+  }
+
+  .dot {
+    height: 24px;
+    width: 24px;
+  }
+
+  .center-line1 {
+    width: 60px;
+  }
+
+  .text-light-ball {
+    font-size: 12px;
+  }
+}

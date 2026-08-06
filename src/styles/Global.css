@@ -1,0 +1,20 @@
+#root {
+    --SecTitle : 50px;
+    --secDesc : 30px;
+};
+
+/* Home Page  */
+.common-sect{
+    display: flex;
+    background-color: red;
+}
+.common-title{
+    font-size: 82px;
+    color: white;
+}
+.common-highlights{
+    color: #AFFE04;
+}
+.common-des{
+    font-size: 20px;
+}

@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/* ::-webkit-scrollbar{
+    width: 2px;
+
+}
+::-webkit-slider-thumb{
+    background-color: #AFFE04;
+} */
+
+body {
+    background-color: #000202;
+}
+
+.common-sect {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #000202;
+    padding: 20px 0px 40px 0px;
+}
+
+.common-sect-title {
+    font-size: 82px;
+    color: white;
+    width: 70%;
+    text-align: center;
+    font-family: "poppins";
+}
+
+.common-highlights {
+    color: #AFFE04 !important;
+}
+
+.common-sect-des {
+    font-size: 20px;
+    color: white;
+    font-family: "inter";
+}
+
+/******************* Service common css code  *********************/
+
+.service-com-tittle {
+    font-family: "poppins";
+    /* font-weight: 200; */
+}
+
+.service-com-content {
+    font-family: "inter";
+}
+
+/* Home Page */
+.home-title {
+    font-size: 32px;
+    color: #AFFE04;
+    /* color: #D4D4D4; */
+    background-color: #000202;
+    border: 2px solid #AFFE04;
+    border-radius: 30px;
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    margin: auto;
+    background: linear-gradient(to right, #D4D4D4, #AFFE04);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.heading_font {
+    font-size: 48px !important;
+}
+
+.content_font {
+    font-size: 19px !important;
+    line-height: 1.5;
+    /* color: ; */
+    text-align: justify !important;
+}
+
+
+/*SECTION GAP  */
+.section_gap {
+    margin-bottom: 80px !important;
+}
+
+
+@media screen and (min-width:320px) and (max-width:600px) {
+
+    body {
+        scrollbar-width: none;
+    }
+
+    .home-title {
+        font-size: 26px;
+        /* width: 110px; */
+        padding: 10px 15px;
+
+    }
+
+    .heading_font {
+        font-size: 24px !important;
+    }
+
+    .content_font {
+        font-size: 16px !important;
+    }
+
+    .common-sect-title {
+        font-size: 42px !important;
+        color: white;
+        width: 95%;
+        text-align: center;
+    }
+
+    .common-sect-des {
+        font-size: 15px;
+        text-align: center;
+        color: white;
+    }
+
+    .section_gap {
+        margin-bottom: 30px !important;
+    }
+
+}
+
+@media screen and (min-width:600px) and (max-width:900px) {
+    .heading_font {
+        font-size: 36px !important;
+    }
+
+    .content_font {
+        font-size: 15px !important;
+    }
+
+    .common-sect-title {
+        font-size: 55px;
+        color: white;
+        width: 90%;
+        text-align: center;
+    }
+}
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000202;
+}
+
+.common-sect{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #000202;
+    padding: 20px 0px 40px 0px;
+}
+.common-sect-title{
+    font-size: 82px;
+    color: white;
+    width: 70%;
+    text-align: center;
+    font-family: "Poppins";
+}
+.common-highlights{
+    color: #AFFE04 !important;  
+}
+.common-sect-des{
+    font-size: 20px;
+    color: white;
+    font-family: "inter";
+}
+
+
+.home-title{
+  font-size: 32px;
+  color: #AFFE04;
+  background-color: #000202;
+  border: 2px solid #AFFE04;
+  border-radius: 30px;
+  padding: 10px;
+  width: 150px;
+  text-align: center;
+  margin: auto;
+   background: linear-gradient(to right, #D4D4D4, #AFFE04);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.heading_font{
+    font-size: 48px!important;
+}
+.content_font{
+    font-size: 19px!important;
+    line-height: 1.5;
+    text-align: justify !important;
+}
+
+
+
+.section_gap{
+    margin-bottom: 80px !important;
+}
+
+
+@media screen and (min-width:320px) and (max-width:600px){
+    .home-title {
+    font-size: 26px;
+    width: 104px;
+    padding:5px;
+
+}
+     .heading_font{
+    font-size: 24px!important;
+}
+.content_font{
+    font-size: 16px!important;
+}
+.common-sect-title {
+    font-size: 42px;
+    color: white;
+    width: 95%;
+    text-align: center;
+}
+.common-sect-des {
+    font-size: 15px;
+    text-align: center;
+    color: white;
+}
+.section_gap{
+    margin-bottom: 30px !important;
+}
+
+}
+@media screen and (min-width:600px) and (max-width:900px){
+    .heading_font{
+    font-size: 36px!important;
+}
+.content_font{
+    font-size: 15px!important;
+}
+.common-sect-title {
+    font-size: 55px;
+    color: white;
+    width: 90%;
+    text-align: center;
+}
+}
+ */

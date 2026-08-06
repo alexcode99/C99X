@@ -1,0 +1,125 @@
+.home-chooseus{
+    padding: 50px;
+    background-color: black;
+}
+.home-choose{
+    display: flex;
+    width: 100%;
+    gap: 30px;
+    /* padding: 50px; */
+    
+}
+.home-choose-left{
+    background-color: #AFFE04;
+    height: 355px;
+    width: 25%;
+    /* width: 320px; */
+    border-radius: 25px;
+    padding: 50px 20px;
+}
+.home-choose-left h3{
+    font-size: 82px;
+    margin-top: 60px;
+    font-weight:500;
+}
+.home-choose-left p{
+    font-size: 20px;
+    color: black;
+}
+/* right side section */
+.home-choose-right{
+    /* height: 389px; */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 355px;
+    border-radius: 20px;
+    padding: 40px;
+    width: 70%;
+    background-color: black;
+    color: white;
+    background-image: url("../../../assets//Home_Page_Assets//review-background.png");
+    background-position: center;
+}
+.home-choose-right div{
+    display: flex;
+    justify-content: space-between;
+}
+.home-choose-right img{
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+.home-choose-right i{
+    color: #AFFE04;
+}
+.home-choose-arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+.home-choose-arrow i:nth-child(1){
+    /* color: black; */
+    background-color: black;
+    border-radius: 100%;
+    /* height: 100px;
+    width: 100px; */
+    padding: 15px;
+    font-size: 20px;
+    text-align: center;
+}
+.home-choose-arrow i:nth-child(2){
+    color: black;
+    background-color: #AFFE04;
+    border-radius: 100%;
+    /* height: 100px;
+    width: 100px; */
+    padding: 5px 10px;
+    font-size: 20px;
+    text-align: center;
+}
+/* Tablet */
+@media (max-width: 992px) {
+  .home-choose {
+    flex-direction: column;
+  }
+
+  .home-choose-left,
+  .home-choose-right {
+    width: 100%;
+  }
+
+  .home-choose-left {
+    height: auto;
+  }
+
+  .home-choose-right {
+    height: auto;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .home-chooseus {
+    padding: 20px;
+  }
+
+  .home-choose-left h3 {
+    font-size: 50px;
+  }
+
+  .home-choose-right {
+    padding: 20px;
+  }
+
+  .home-choose-arrow i {
+    padding: 10px;
+    font-size: 16px;
+  }
+}

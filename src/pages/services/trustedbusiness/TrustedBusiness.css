@@ -1,0 +1,147 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.business_section {
+    background-color: black;
+    background-image: url('../../../assets/services/Grid.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.light_bg {
+    position: absolute;
+    top: 29%;
+}
+
+.business_tittle {
+    width: 100%;
+    font-size: 50px;
+    font-weight: 550;
+    line-height: 1.3;
+    padding: 10px;
+    color: #fff;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px 0px 10px 0px;
+}
+
+.business_content {
+    width: 80%;
+    color: white;
+    font-size: 21px;
+    padding: 10px;
+}
+
+.business_content1 {
+    width: 80%;
+    font-size: 21px;
+    padding: 20px;
+}
+
+.scalableSuccess_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    padding: 15px;
+}
+
+.scalableSuccess_boxCountDiv {
+    /* height: 500px; */
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px 40px;
+    margin-bottom: 50px;
+}
+
+.scalableSuccess_box {
+    height: 200px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #111a00;
+    /* background-blend-mode: overlay; */
+    border-radius: 25px;
+    border: 1px solid #25320a;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.scalableSuccess_box h1 {
+    color: white;
+}
+
+.scalableSuccess_box p {
+    color: #A7ADBE;
+}
+
+
+@media (max-width: 768px) {
+
+    .business_tittle {
+        font-size: 30px;
+    }
+
+    .business_section {
+        padding: 15px;
+    }
+
+    .business_content {
+        font-size: 19px;
+        width: 100%;
+        /* padding: 15px 10px; */
+    }
+
+    .business_content1 {
+        font-size: 19px;
+        width: 100%;
+    }
+
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 480px) {
+
+    .business_tittle {
+        font-size: 25px;
+        padding: 40px 5px 15px 5px;
+    }
+
+    .business_content {
+        font-size: 15px;
+        width: 100%;
+        /* padding: 15px 10px; */
+    }
+
+    .business_content1 {
+        font-size: 15px;
+        width: 100%;
+        text-align: justify;
+        padding: 10px 0px;
+    }
+
+    .scalableSuccess_box {
+        width: 100%;
+    }
+
+    .scalableSuccess_boxCountDiv {
+        /* height: 200px; */
+        width: 100%;
+        /* padding: 15px; */
+    }
+}

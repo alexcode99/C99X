@@ -1,0 +1,378 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/************* Overall First Section */
+
+.digital_section_1 {
+    background-color: black;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    /* padding-top: 300px; */
+    position: relative;
+}
+
+/******************* Content Box */
+
+.section_1_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 40px;
+    /* padding: 40px; */
+}
+
+/*.************************ Hero Content Name */
+
+.digital_hero {
+    color: white;
+    font-size: 56px;
+    /* min-height: 140px; */
+    text-align: center;
+    /* padding: 10px; */
+    font-weight: 600;
+    padding-top: 130px;
+}
+
+.digital_name {
+    color: #AFFE04;
+}
+
+.highlight {
+    font-weight: 700;
+}
+
+/********************** Course Content */
+
+.digital_content {
+    color: white;
+    font-size: 21px;
+    font-weight: 400;
+    width: 65%;
+    min-height: 126;
+    padding: 40px;
+}
+
+/********************* First Section Button */
+
+.section_1_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+/************************ Button one */
+/* 
+.section_1_btn1 {
+    text-decoration: none;
+    border-radius: 100px;
+    background-color: #AFFE04;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 20px;
+    padding: 20px;
+} */
+
+/************************** Button two */
+
+.section_1_btn2 {
+    color: #fff;
+    border-radius: 100px;
+    background-color: rgba(53, 52, 52, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 20px;
+    padding: 15px 32px;
+    backdrop-filter: blur(10px);
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.section_1_btn2:hover {
+    background-color: #182f1b;
+    color: #0fe845;
+    transform: translateY(-3px) scale(1.03);
+    transform: translateY(-2px);
+    /* box-shadow: 0 10px 25px rgba(13, 215, 63, 0.3); */
+}
+/* ─── Active ───────────────── */
+
+.section_1_btn2:active {
+    transform: scale(0.96);
+}
+
+.section_1_moon {
+    width: 100%;
+}
+
+/**************** Upper Shade images */
+
+.shades {
+    position: absolute;
+    /* height: 500px; */
+    width: 890px;
+}
+
+.left_shade {
+    position: absolute;
+    /* IMPORTANT */
+    top: -200px;
+    left: 0;
+    animation-name: shade;
+    animation-duration: 1s;
+    /* 's' miss aagiduchu */
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    transition: all 1s;
+}
+
+@keyframes shade {
+    from {
+        top: -300px;
+        left: -300px;
+    }
+
+    to {
+        top: 0;
+        left: 0;
+    }
+}
+
+.right_shade {
+    position: absolute;
+    /* IMPORTANT */
+    top: -200px;
+    right: 0;
+    animation-name: shade-1;
+    animation-duration: 1s;
+    /* 's' miss aagiduchu */
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    transition: all 1s;
+}
+
+@keyframes shade-1 {
+    from {
+        top: -300px;
+        right: -300px;
+    }
+
+    to {
+        top: 0;
+        right: 0;
+    }
+}
+
+.hero-button-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    border-radius: 999px;
+}
+
+/* ─── Button base ────────────────────────────────────────── */
+
+.hero-button {
+    --btn-bg: #0a0a0a;
+    --btn-border: #e8e0d0;
+    --btn-text: #e8e0d0;
+    --flair-color: #e8e0d0;
+
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding: 15px 17px;
+    /* 🔥 balanced spacing */
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    letter-spacing: 0.5px;
+
+    color: black;
+    background: #affe04;
+
+    /* border: 1.5px solid var(--btn-border); */
+    border-radius: 999px;
+    /* 🔥 FULL PILL SHAPE */
+
+    cursor: pointer;
+    /* ❗ cursor none remove panniten */
+    overflow: hidden;
+
+    outline: none;
+    z-index: 1;
+
+    transition: all 0.3s ease;
+}
+
+/* ─── Flair (blob) ───────────────── */
+
+.hero-button__flair {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 180%;
+    aspect-ratio: 1 / 1;
+    background: var(--flair-color);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* ─── Label ───────────────── */
+
+.hero-button__label {
+    text-decoration: none;
+    color: #000;
+    position: relative;
+    z-index: 2;
+}
+
+/* ─── Hover ───────────────── */
+
+.hero-button:hover {
+    /* box-shadow: 0 0 0 4px rgba(232, 224, 208, 0.15); */
+    transform: translateY(-2px);
+}
+
+/* ─── Active ───────────────── */
+
+.hero-button:active {
+    transform: scale(0.96);
+}
+
+/* ─── Focus ───────────────── */
+
+.hero-button:focus-visible {
+    outline: 2px solid var(--btn-border);
+    outline-offset: 4px;
+}
+
+/* ================ RESPONSIVE ================== */
+
+/* 1200px */
+@media (max-width:1200px) {
+    .section_1_content {
+        padding: 35px;
+    }
+
+    .digital_hero {
+        font-size: 60px;
+    }
+
+    .digital_content {
+        width: 90%;
+        padding: 30px;
+        font-size: 21px;
+    }
+
+    .shades {
+        width: 500px;
+    }
+}
+
+
+/* 900px */
+@media (max-width:900px) {
+    .section_1_content {
+        padding: 25px;
+    }
+
+    .digital_hero {
+        font-size: 50px;
+    }
+
+    .digital_content {
+        width: 100%;
+        padding: 25px;
+    }
+
+    .shades {
+        width: 300px;
+    }
+}
+
+
+/* 600px */
+@media (max-width:630px) {
+    .section_1_content {
+        padding: 20px;
+    }
+
+    .digital_hero {
+        font-size: 45px;
+        width: 100%;
+    }
+
+    .digital_content {
+        padding: 20px;
+    }
+
+    .section_1_btn {
+        padding: 20px;
+    }
+}
+
+
+/* 400px */
+@media (max-width:400px) {
+    .section_1_content {
+        padding: 15px;
+    }
+
+    .digital_hero {
+        padding-top: 80px;
+        font-size: 30px;
+        width: 100%;
+        /* text-align: justify; */
+    }
+
+    .digital_content {
+        font-size: 15px;
+        padding: 10px;
+        text-align: justify;
+    }
+
+    .section_1_btn1 {
+        font-size: 17px;
+    }
+
+    .section_1_btn2 {
+        font-size: 15px;
+        padding: 1rem 1.7rem;
+        letter-spacing: 1px;
+        width: 270px;
+    }
+
+    .section_1_btn {
+        padding-top: 0;
+        
+    }
+
+    .hero-button {
+        font-size: 14px;
+        padding: 1.1rem 1.2rem;
+        letter-spacing: 0.1em;
+        width: max-content;
+    }
+}

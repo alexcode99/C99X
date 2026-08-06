@@ -1,0 +1,124 @@
+
+.square-container {
+    width: 90%;
+    height: 195px;
+    position: absolute;
+    overflow: hidden;
+    transform: translate(17px, 25px)
+}
+
+/* Common */
+.line {
+  position: absolute;
+  border-radius: 25%;
+}
+
+/* ------------------------- */
+.top {
+  top: 0;
+  left: 0;
+  width: 100%;
+  animation: moveBgX linear infinite;
+}
+
+.bottom {
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  animation: moveBgXReverse linear infinite;
+}
+
+.right {
+  top: 0;
+  right: 0;
+  height: 100%;
+  animation: moveBgY linear infinite;
+}
+
+.left {
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  animation: moveBgYReverse linear infinite;
+}
+
+@keyframes moveBgX {
+  from { background-position: 0 0; }
+  to { background-position: -100px 0; }
+}
+
+@keyframes moveBgXReverse {
+  from { background-position: 0 0; }
+  to { background-position: 100px 0; }
+}
+
+@keyframes moveBgY {
+  from { background-position: 0 0; }
+  to { background-position: 0 -100px; }
+}
+
+@keyframes moveBgYReverse {
+  from { background-position: 0 0; }
+  to { background-position: 0 100px; }
+}
+/* .top {
+  top: 0;
+  left: 0;
+  width: 200%;
+  animation: moveRight linear infinite;
+}
+
+
+.right {
+  top: 0;
+  right: 0;
+  height: 200%;
+  animation: moveDown linear infinite;
+}
+
+
+.bottom {
+  bottom: 0;
+  right: 0;
+  width: 200%;
+  animation: moveLeft linear infinite;
+}
+
+.left {
+  bottom: 0;
+  left: 0;
+  height: 200%;
+  animation: moveUp linear infinite;
+}
+
+.wrong-1{
+  bottom: 0;
+    left: 45%;
+    top: -80px;
+    transform: rotate(59deg);
+    height: 200%;;
+} */
+ /* ----------- */
+
+
+/* Animations */
+@keyframes moveRight {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@keyframes moveDown {
+  from { transform: translateY(0); }
+  to { transform: translateY(-50%); }
+}
+
+@keyframes moveLeft {
+  from { transform: translateX(0); }
+  to { transform: translateX(50%); }
+}
+
+@keyframes moveUp {
+  from { transform: translateY(0); }
+  to { transform: translateY(50%); }
+}
+

@@ -1,0 +1,412 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.service_section {
+    background-color: black;
+    margin-bottom: 30px;
+}
+
+.service_content_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.service_tittle {
+    width: 95%;
+    /* max-width: 900px; */
+
+    font-size: clamp(24px, 5vw, 48px);
+    font-weight: 550;
+    line-height: 1.3;
+    padding: 10px;
+    color: #fff;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.service_content {
+    padding: 20px 20px 0px 20px;
+    width: 80%;
+    color: #ffff;
+    font-size: 21px;
+    /* background-color: pink; */
+    text-align: center;
+
+}
+
+.service_chart_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 5px; */
+}
+
+.service_chart_box1 {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    /* line-height: -1; */
+    padding: 50px;
+    gap: 20px;
+}
+
+.service_mark_chart {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 7px 7px 0px;
+    background-image: linear-gradient(to right, rgb(2, 43, 2), rgb(15, 31, 15) 20%);
+
+}
+
+.mark_chart_text {
+    color: white;
+
+    font-size: 17px;
+    border: none;
+    text-align: left;
+    width: 85%;
+    padding-left: 10px;
+}
+
+/* .service_mark_chart {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, rgb(2, 43, 2), rgb(15, 31, 15) 20%);
+
+}
+
+.mark_chart_text {
+    color: white;
+    font-size: 17px;
+    border: none;
+    text-align: left;
+    width: 85%;
+} */
+
+.mark_gif {
+    height: 40px;
+    width: 40px;
+}
+
+.tick_box {
+    border-left: 2px solid #affe04;
+    text-align: left;
+    padding-left: 40px;
+}
+
+.service_chart_box2 {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 0.5px solid gray;
+    padding: 40px 40px;
+    border-radius: 30px;
+    box-shadow: inset 0px 0px 50px rgba(255, 255, 255, 0.2);
+
+}
+
+.service_chart_titlle {
+    color: white;
+    font-size: 35px;
+    padding: 20px;
+}
+
+.sevice_chart_content {
+    color: gray;
+    font-size: 18px;
+    padding: 20px;
+}
+
+/* ─── Wrapper / Page centering ───────────────────────────── */
+
+.magnetic-button-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* min-height: 100vh; */
+    background-color: #000;
+    border-radius: 999;
+}
+
+/* ─── Button base ────────────────────────────────────────── */
+
+.magnetic-button {
+    --btn-bg: #0a0a0a;
+    --btn-border: #e8e0d0;
+    --btn-text: #e8e0d0;
+    --flair-color: #e8e0d0;
+
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px 2rem;
+    /* font-family: sans-serif; */
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+    /* text-transform: uppercase; */
+    color: black;
+    background: #affe04;
+    border: none;
+    border-radius: 100px;
+    cursor: none;
+    overflow: hidden;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    z-index: 1;
+    transition: all 0.3s;
+}
+
+/* ─── Flair (blob that follows the cursor) ───────────────── */
+
+/*
+  top & left are set as % via JavaScript.
+  translate(-50%, -50%) keeps the blob's center on that point.
+  scale(0) = hidden by default.
+  Transitions are set dynamically via JS for enter/move/leave control.
+*/
+
+.magnetic-button__flair {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 170%;
+    aspect-ratio: 1 / 1;
+    background: var(--flair-color);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    pointer-events: none;
+    will-change: transform, top, left;
+    z-index: 1;
+}
+
+/* ─── Label sits above the flair ────────────────────────── */
+
+.magnetic-button__label {
+    position: relative;
+    z-index: 2;
+    /* mix-blend-mode: difference; */
+}
+
+/* ─── Subtle outer glow on hover ────────────────────────── */
+
+.magnetic-button:hover {
+    /* box-shadow: 0 0 0 4px rgba(232, 224, 208, 0.12); */
+    transform: translateY(-2px);
+}
+
+.magnetic-button:active {
+    transform: scale(0.96);
+}
+
+/* ─── Focus-visible ring (a11y) ─────────────────────────── */
+
+.magnetic-button:focus-visible {
+    outline: 2px solid var(--btn-border);
+    outline-offset: 4px;
+}
+
+/* ─── Tablet (max-width: 1024px) ───────────────────────── */
+
+@media (max-width: 1350px) {
+    .service_chart_box {
+        /* width: 100%; */
+        padding: 5px;
+        /* flex-direction: column; */
+        align-items: center;
+    }
+
+    .service_chart_box1 {
+        width: 50%;
+    }
+
+    .service_chart_box2 {
+        width: 50%;
+    }
+}
+
+@media (max-width: 1274px) {
+    .service_tittle {
+        font-size: 42px;
+        padding: 10px;
+    }
+
+    .service_content {
+        width: 85%;
+        font-size: 21px;
+    }
+
+    .service_chart_box {
+        /* width: 100%; */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service_chart_box1 {
+        width: 70%;
+        padding: 30px;
+    }
+
+    .service_mark_chart {
+        width: 100%;
+    }
+
+    .service_chart_box2 {
+        width: 70%;
+        padding: 40px 30px;
+    }
+
+    .service_chart_titlle {
+        font-size: 28px;
+    }
+
+    .sevice_chart_content {
+        font-size: 20px;
+    }
+
+    .magnetic-button {
+        font-size: 18px;
+        padding: 1.2rem 1.8rem;
+    }
+}
+
+/* ─── Mobile Large (max-width: 768px) ──────────────────── */
+@media (max-width: 768px) {
+    .service_tittle {
+        font-size: 32px;
+        line-height: 1.5;
+        padding: 10px;
+    }
+
+    .service_content {
+        width: 95%;
+        font-size: 17px;
+        padding: 15px;
+    }
+
+    .service_chart_box {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .service_chart_box1 {
+        width: 85%;
+        padding: 0px;
+        gap: 15px;
+    }
+
+    /* 
+    .service_mark_chart {
+        padding: 10px;
+    } */
+
+    .mark_chart_text {
+        font-size: 15px;
+        width: 100%;
+        margin: 8px;
+        padding: 10px;
+    }
+
+    .mark_gif {
+        height: 24px;
+        width: 24px;
+    }
+
+    .tick_box {
+        padding-left: 20px;
+    }
+
+    .service_chart_box2 {
+        width: 90%;
+        padding: 30px 20px;
+        border-radius: 20px;
+    }
+
+    .service_chart_titlle {
+        font-size: 24px;
+        padding: 12px;
+    }
+
+    .sevice_chart_content {
+        font-size: 17px;
+        padding: 12px;
+    }
+
+    .magnetic-button {
+        font-size: 16px;
+        padding: 1rem 1.5rem;
+        cursor: pointer;
+        /* restore default cursor on touch */
+    }
+}
+
+/* ─── Mobile Small (max-width: 480px) ──────────────────── */
+@media (max-width: 480px) {
+    .service_tittle {
+        font-size: 25px;
+        line-height: 1.4;
+        padding: 10px;
+        text-align: justify;
+    }
+
+    .service_content {
+        font-size: 15.5px;
+        padding: 10px;
+        text-align: justify;
+    }
+
+    .service_chart_box1 {
+        width: 100%;
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .mark_chart_text {
+        font-size: 15px;
+    }
+
+    .service_chart_box2 {
+        width: 95%;
+        padding: 20px 15px;
+        border-radius: 15px;
+        box-shadow: inset 0px 0px 30px rgba(255, 255, 255, 0.15);
+    }
+
+    .service_chart_titlle {
+        font-size: 24px;
+        padding: 10px;
+    }
+
+    .sevice_chart_content {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    .magnetic-button {
+        font-size: 14px;
+        padding: 0.9rem 1.2rem;
+        letter-spacing: 0.1em;
+    }
+
+    .magnetic-button__flair {
+        display: none;
+        /* disable blob effect on small touch screens */
+    }
+}

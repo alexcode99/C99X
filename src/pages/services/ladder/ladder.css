@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+/* MAIN SECTION */
+.scroll-section {
+    position: relative;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+/* 🔥 CANVAS ONLY */
+.video {
+    position: sticky;
+    top: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    display: block;
+
+    background: black;
+}
+
+/* CONTENT BOXES */
+.anime-content {
+    padding: 20px;
+    text-align: justify;
+    border-radius: 20px;
+    max-width: 300px;
+    opacity: 0;
+    background-color: black;
+    z-index: 5;
+    box-shadow: inset 0 10px 20px rgba(255, 255, 255, 0.2);
+}
+
+.anime-content h2 {
+    font-size: 22px;
+}
+
+.anime-content p {
+    font-size: 16px;
+}
+
+/* LEFT RIGHT BOX */
+.scroll-box-1,
+.scroll-box-2 {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.scroll-box-1 {
+    left: 0;
+    align-items: flex-end;
+    padding-right: 30px;
+}
+
+.scroll-box-2 {
+    right: 0;
+    align-items: flex-start;
+    padding-left: 30px;
+}
+
+/* SCROLL SPACE */
+.ladder-spacer {
+    height: 2400px;
+    width: 100%;
+    background: black;
+}
+
+/* RESPONSIVE */
+@media only screen and (max-width: 1250px) {
+    .video {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .scroll-box-1,
+    .scroll-box-2 {
+        width: 40%;
+    }
+}
+
+@media (max-width: 750px) {
+    .scroll-box-1,
+    .scroll-box-2 {
+        display: none;
+    }
+}

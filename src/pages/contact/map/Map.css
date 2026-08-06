@@ -1,0 +1,14 @@
+.getInTouch_mapContainer iframe{
+    /* margin-top: 100px; */
+    width: 90%;
+    margin: auto;
+    border-radius: 15px;
+    /* margin-bottom: 200px; */
+}
+.getInTouch_mapContainer{
+    width: 100%;
+    display: flex;
+    justify-self: center;
+    position: relative;
+    /* top: 200px;   */
+}
